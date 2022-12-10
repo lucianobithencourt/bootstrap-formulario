@@ -23,18 +23,74 @@
 </head>
 
 <body>
-    
+
     <h1 class="display-4 text-center text-danger  ">Formulário</h1>
+    <h3>[class="form-group formo-control"]</h3>
 
-    <form action="#" class="form-group">
-        <label  class="" for="form-control">Nome</label>
+    <form>
+        <div class="form-group">
+            <label for="inome">Usuário</label>
+
+            <input type="email" class="form-control" id="inome" aria-describedby="emailHelp" placeholder="Seu email" required>
+
+        </div>
+
+
+        <div class="form-group">
+            <label for="ie-mail">Senha</label>
+            <input type="password" class="form-control" id="ie-mail" placeholder="Digite senha" required>
+
+            <button class="btn btn-info mt-3" type="submit">Enviar</button>
+        </div>
+
+        <div class="form-group">
+            <select class="form-control " name="lista" id="ilista">
+                <label for="ilista">
+                    <option value="AM">Amazonas</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="DF">Distrtito Federal</option>
+                </label>
+            </select>
+        </div>
+
+
+        <div class="form-group">
+            <label for="imsg">Mensagem</label>
+            <textarea class="form-control" name="msg" id="imsg" cols="10" rows="3" placeholder="Digite aqui sua mensagem"></textarea>
+        </div>
+
+        <!-- [class="custom-file -> custom-file-label->             custom-file-input"] 
+
+-->
+
+        <div>
+            <label for="ifile">
+        Selecione Arquivo
+    </label>
+
+            <input type="file" name="file" id="ifile">
+        </div>
+<br>
+        <div class="custom-file">
+
+            <input class="custom-file-input" type="file" name="file" id="ifile">
+
+            <label class="custom-file-label" for="ifile">
+    Selecione Arquivo
+</label>
+        </div>
+
+<div class="form-inline text-success">
+    <label  for="ilogon"></label>
+    <input class="form-control" type="email" name="logon" id="ilogon" placeholder="Digite sei login">
+
+    <label for="isenha"></label>
+    <input class="form-control text-info mx-auto" type="password" name="Senha" id="isenha" minlength="5" placeholder="Digite sua senha" maxlength="10">
+
+    <input class="btn btn-info" type="submit" value="Enviar">
+</div>
+
     </form>
-        
-        
-
-
-
-    
 
 
 
@@ -45,12 +101,17 @@
 
 
 
-                    <!-- JavaScript (Opcional) -->
-                    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-                    <script src="bootstrap/js/bootstrap.min.js">
-                    </script>
+
+
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js">
+    </script>
 </body>
 
 </html>
